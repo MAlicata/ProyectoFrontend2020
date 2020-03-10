@@ -1,0 +1,68 @@
+   /* Container holding the image and the text */
+   
+   .noticia {
+       position: relative;
+   }
+   /* Bottom right text */
+   
+   .text-block {
+       position: absolute;
+       bottom: 0;
+       right: 0;
+       left: 30%;
+       top: 50%;
+       background-color: #222222;
+       color: white;
+       padding-left: 1em;
+       padding-right: 1em;
+       overflow: hidden;
+       font: 300 12px/14px Arial;
+   }
+   
+   .text-block a {
+       color: white;
+   }
+   
+   .row {
+       display: flex;
+       flex-wrap: wrap;
+       padding: 0 4px;
+       justify-content: space-evenly;
+   }
+   /* Create four equal columns that sits next to each other */
+   
+   .noticia {
+       flex: 30%;
+       max-width: 30%;
+       padding: 0 4px;
+       display: flex;
+       align-items: center;
+   }
+   
+   .noticia img {
+       margin-top: 8px;
+       vertical-align: middle;
+       width: 100%;
+   }
+   /* Responsive layout - makes a two column-layout instead of four columns */
+   
+   @media screen and (max-width: 800px) {
+       .noticia {
+           flex: 50%;
+           max-width: 50%;
+       }
+   }
+   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+   
+   @media screen and (max-width: 600px) {
+       .noticia {
+           flex: 100%;
+           max-width: 100%;
+       }
+       .text-block {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+       }
+   }

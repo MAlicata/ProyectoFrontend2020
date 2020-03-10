@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jugadores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="jugadores.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" width="40" height="40" class="d-inline-block align-top" alt=""> F.C BARCELONA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="/noticias.html">Noticias<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/jugadores.html">Equipo</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="">Calendario</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/clasificacion.html">Clasificacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Configuracion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="#">Ajustes</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                    </div>
+                    <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                          Mi Cuenta
+                        </button>
+                        <div class="modal justify-content-center" id="myModal">
+                            <div class="modal-dialog" style="max-width: fit-content; margin: auto; margin-top: 10%;">
+                                <div class="modal-content">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/profileimg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lucas Matias Zarife</h5>
+                                            <p class="card-text">Fan desde 01/08/1998</p>
+                                            <p class="card-text">Email Registrado: lucmatzar@gmail.com</p>
+                                            <p class="card-text">Puntaje de Fan: 1800 pts.</p>
+                                            <a href="login.html" class="btn btn-primary">Modificar Perfil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <div class="container">
+        <header class="jugadoress">
+            <h2>Jugadores</h2>
+        </header>
+        <!--es un solo row con flex wrap-->
+        <div class="row">
+            <!--JugStat es absolute top:0 mientras que col es relative, para que esten superpuesto, y es Display:None hasta que alguien dispare hover-->
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Alba-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Jordi Alba</h4>
+                <div class="JugStat">
+                    <h4>Goles: 39</h4>
+                    <h4>FP: 423</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Alena-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Carles Aleñá</h4>
+                <div class="JugStat">
+                    <h4>Goles: 88</h4>
+                    <h4>FP: 480</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Busquets-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Sergio Busquets</h4>
+                <div class="JugStat">
+                    <h4>Goles: 37</h4>
+                    <h4>FP: 520</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/De-Jong-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Frenkie de Jong</h4>
+                <div class="JugStat">
+                    <h4>Goles: 98</h4>
+                    <h4>FP: 541</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Dembele-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Ousmane Dembélé</h4>
+                <div class="JugStat">
+                    <h4>Goles: 99</h4>
+                    <h4>FP: 542</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Firpo-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Júnior Firpo</h4>
+                <div class="JugStat">
+                    <h4>Goles: 13</h4>
+                    <h4>FP: 496</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Griezmann-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Antoine Griezmann</h4>
+                <div class="JugStat">
+                    <h4>Goles: 339</h4>
+                    <h4>FP: 21</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Lenglet-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Clément Lenglet</h4>
+                <div class="JugStat">
+                    <h4>Goles: 119</h4>
+                    <h4>FP: 665</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Messi-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Lionel Messi</h4>
+                <div class="JugStat">
+                    <h4>Goles: 6969</h4>
+                    <h4>FP: 2331</h4>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Neto-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Neto</h4>
+                <div class="JugStat">
+                    <h4>Goles: 0</h4>
+                    <h4>FP: 27</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Pique-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Gerard Piqué</h4>
+                <div class="JugStat">
+                    <h4>Goles: 443</h4>
+                    <h4>FP: 221</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Rakitic-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Ivan Rakitic</h4>
+                <div class="JugStat">
+                    <h4>Goles: 0</h4>
+                    <h4>FP: 79</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Roberto-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Sergi Roberto</h4>
+                <div class="JugStat">
+                    <h4>Goles: 1</h4>
+                    <h4>FP: 1</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Semedo-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Moussa Wague</h4>
+                <div class="JugStat">
+                    <h4>Goles: 421</h4>
+                    <h4>FP: 700</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Suarez-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Luis Suárez</h4>
+                <div class="JugStat">
+                    <h4>Goles: 33</h4>
+                    <h4>FP: 875</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Wague-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Nélson Semedo</h4>
+                <div class="JugStat">
+                    <h4>Goles: 69</h4>
+                    <h4>FP: 420</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Lenglet-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Clément Lenglet</h4>
+                <div class="JugStat">
+                    <h4>Goles: 79</h4>
+                    <h4>FP: 980</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Umtiti-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Samuel Umtiti</h4>
+                <div class="JugStat">
+                    <h4>Goles: 12</h4>
+                    <h4>FP: 332</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Vidal-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Arturo Vidal</h4>
+                <div class="JugStat">
+                    <h4>Goles: 111</h4>
+                    <h4>FP: 332</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/Todibo-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Jean-Clair Todibo</h4>
+                <div class="JugStat">
+                    <h4>Goles: 333</h4>
+                    <h4>FP: 229</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="avatar">
+                    <img src="img/Jugadores/ter-Stegen-600x708.png" alt="Jugador" class="fotoJug" />
+                </div>
+                <h4 class="nombreJ">Marc-André ter Stegen</h4>
+                <div class="JugStat">
+                    <h4>Goles: 2</h4>
+                    <h4>FP: 327</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt="">
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <p><b>Nuestro Club</b></p>
+                    <span>Tel. 902 1899 00</span>
+                    <br>
+                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
+                    <br>
+                    <span>oab@fcbarcelona.cat</span>
+                </div>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="/consulta.html">
+                    <b style="color: bisque;">
+                      Contactenos
+                  </b>
+                </a>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="https://www.facebook.com/fcbarcelona">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
+                </a>
+                <a href="https://twitter.com/fcbarcelona_es">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="footer-copyright text-center">
+            <p>
+                © Copyright FC Barcelona Página Oficial del FC Barcelona
+            </p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+</body>
+
+</html>

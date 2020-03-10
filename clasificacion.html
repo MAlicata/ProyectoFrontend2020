@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" width="40" height="40" class="d-inline-block align-top" alt=""> F.C BARCELONA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="/noticias.html">Noticias<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jugadores.html">Equipo</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="">Calendario</a>
+                </li> -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/clasificacion.html">Clasificacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Configuracion
+                      </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="#">Ajustes</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                    </div>
+                    <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Mi Cuenta
+                          </button>
+                        <div class="modal justify-content-center" id="myModal">
+                            <div class="modal-dialog" style="max-width: fit-content; margin: auto; margin-top: 10%;">
+                                <div class="modal-content">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/profileimg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lucas Matias Zarife</h5>
+                                            <p class="card-text">Fan desde 01/08/1998</p>
+                                            <p class="card-text">Email Registrado: lucmatzar@gmail.com</p>
+                                            <p class="card-text">Puntaje de Fan: 1800 pts.</p>
+                                            <a href="login.html" class="btn btn-primary">Modificar Perfil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- START TABLE CLASIFICACIONES -->
+    <div class="container">
+        <h1>Clasificaciones</h1>
+        <img src="img/laliga.jpg" alt="">
+        <div class="table-responsive">
+            <caption>Ultima Actualizacion: 10:02 am 02/11/2019</caption>
+            <table class="table table-hover table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Posicion</th>
+                        <th scope="col">Equipo</th>
+                        <th scope="col">Puntos</th>
+                        <th scope="col">Victorias</th>
+                        <!-- aqui ponerle el numero de victorias y con javascript con hover que muestre el listado de vistorias como en la pagina del barça -->
+                        <th scope="col">Empates</th>
+                        <th scope="col">Derrotas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-image: linear-gradient(90deg, #cd122d, #154284); color: white">
+                        <th scope="row">1</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt=""></a>
+                            FC Barcelona
+                        </td>
+                        <td>22</td>
+                        <td>
+                            <a href="#" data-toggle="popover" title="Partidos Ganados" data-content="" data-html="true" data-template='<img src="img/resultados/barcavskobe.jpg" alt="">'>7</a>
+                        </td>
+                        <td> <a href="#" data-toggle="popover" title="Partidos Perdidos" data-content="" data-html="true" data-template='<img src="img/resultados/empate.jpg" alt="">'>1</a>
+
+                        </td>
+                        <td>
+                            <a href="#" data-toggle="popover" title="Partidos Perdidos" data-content="" data-html="true" data-template='<img src="img/resultados/barcavschel.jpg" alt="">'>2</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/280.png" alt=""></a> R Madrid
+                        </td>
+                        <td>21</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/3496.png" alt=""></a>
+                            Granada</td>
+                        <td>20</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>3</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/495.png" alt=""></a>
+                            Atletico</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>1</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/269.png" alt=""></a>
+                            Sevilla</td>
+                        <td>20</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>3</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/272.png" alt=""></a>
+                            Real Sociedad</td>
+                        <td>19</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>4</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>
+                            <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/284.png" alt=""></a>
+                            Villareal</td>
+                        <td>17</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>4</td>
+
+                    </tr>
+                </tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- END TABLE CLASIFICACIONES -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt="">
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <p><b>Nuestro Club</b></p>
+                    <span>Tel. 902 1899 00</span>
+                    <br>
+                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
+                    <br>
+                    <span>oab@fcbarcelona.cat</span>
+                </div>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="http://">
+                    <b style="color: bisque;">
+                            Contactenos
+                        </b>
+                </a>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="https://www.facebook.com/fcbarcelona">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
+                </a>
+                <a href="https://twitter.com/fcbarcelona_es">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="footer-copyright text-center">
+            <p>
+                © Copyright FC Barcelona Página Oficial del FC Barcelona
+            </p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</body>
+
+</html>

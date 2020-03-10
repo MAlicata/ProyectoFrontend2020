@@ -1,0 +1,11 @@
+a:hover {
+    text-decoration: none;
+}
+
+a:hover a:link {
+    color: #00aaff;
+}
+
+img {
+    width: 100%;
+}

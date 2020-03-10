@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="noticias.css">
+
+</head>
+
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" width="40" height="40" class="d-inline-block align-top" alt=""> F.C BARCELONA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/noticias.html">Noticias<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jugadores.html">Equipo</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="">Calendario</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/clasificacion.html">Clasificacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galeria.html">Galeria</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Configuracion
+                              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="#">Ajustes</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesion</a>
+                    </div>
+                    <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Mi Cuenta
+                                  </button>
+                        <div class="modal justify-content-center" id="myModal">
+                            <div class="modal-dialog" style="max-width: fit-content; margin: auto; margin-top: 10%;">
+                                <div class="modal-content">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/profileimg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lucas Matias Zarife</h5>
+                                            <p class="card-text">Fan desde 01/08/1998</p>
+                                            <p class="card-text">Email Registrado: lucmatzar@gmail.com</p>
+                                            <p class="card-text">Puntaje de Fan: 1800 pts.</p>
+                                            <a href="login.html" class="btn btn-primary">Modificar Perfil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- START NEWS CONTAINER -->
+    <div class="container-fluid py-5">
+        <div class="py-5 text-center">
+            <h1>Noticias</h1>
+        </div>
+        <div class="row">
+
+            <div class="noticia">
+                <img src="img/gal/gal2.jpg" alt="">
+                <div class="text-block">
+                    <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1484061/la-calculadora-del-barca-en-la-champions" target="_blank">
+                        <h6>La calculadora del Barça en la Champions</h6>
+                    </a>
+                    <p>¿Qué debe hacer el equipo azulgrana para estar en octavos? Repasamos todas las combinaciones posibles</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal3.jpg" alt="">
+                <div class="text-block">
+                    <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1483813/chocan-con-el-muro-checo-0-0" target="_blank">
+                        <h6>Chocan con el muro checo</h6>
+                    </a>
+                    <p>A pesar de la insistencia azulgrana, los culés no han podido superar la portería de Kolář y terminan sumando un punto más para mantenerse líderes del grupo F</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal5.jpg" alt="">
+                <div class="text-block">
+                    <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1483774/jordi-alba-recae-de-la-lesion-en-el-biceps-femoral" target="_blank">
+                        <h6>Jordi Alba recae de la lesión en el bíceps femoral</h6>
+                    </a>
+                    <p>El lateral azulgrana se ha lesionado en el descanso y las pruebas realizadas al finalizar el partido han mostrado que Alba ha tenido una recaída de la lesión en el bíceps femoral del muslo izquierdo</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal3.jpg" alt="">
+                <div class="text-block">
+                    <h6>Levante-Barça: El líder quiere mantener la racha</h6>
+                    <p>El conjunto culé visita el Ciudad de Valencia en la 12ª jornada del campeonato de Liga en busca de la 8ª victoria consecutiva</p>
+                </div>
+            </div>
+
+
+            <div class="noticia">
+                <img src="img/gal/gal8.jpg" alt="">
+                <div class="text-block">
+                    <h6>Barça - Slavia de Praga: Vuelve la Champions al Camp Nou</h6>
+                    <p>Movistar Liga de Campeones: Los culés reciben al conjunto checo en la cuarta jornada de la fase de grupos europea para tratar de encauzar el acceso a los octavos de final</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal10.jpg" alt="">
+                <div class="text-block">
+                    <h6>Así fue el partido de ida contra el Slavia</h6>
+                    <p>Repasamos los momentos más destacados de la victoria azulgrana en el Eden Arena</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal9.jpg" alt="">
+                <div class="text-block">
+                    <h6>La convocatoria para recibir al Slavia</h6>
+                    <p>Ernesto Valverde ha dado a conocer a los 18 jugadores citados para afrontar la cuarta jornada de la fase de grupos de la Liga de Campeones</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal9.jpg" alt="">
+                <div class="text-block">
+                    <h6>La convocatoria para visitar el Levante</h6>
+                    <p>Ernesto Valverde ha dado a conocer los 19 jugadores citados, para afrontar la 12ª jornada de Liga en el Ciudad de Valencia (16 horas)</p>
+                </div>
+            </div>
+
+
+            <div class="noticia">
+                <img src="img/gal/gal-v-1.jpg" alt="">
+                <div class="text-block">
+                    <h6>El ABC del Barça-Slavia</h6>
+                    <p>Ponte a prueba y acierta las 26 preguntas, una por letra. ¿Cuánto sabes sobre los dos conjuntos que se enfrentarán en la jornada 4 de la Champions?</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal-v-2.jpg" alt="">
+                <div class="text-block">
+                    <h6>Así será la semana del primer equipo</h6>
+                    <p>Los culés jugarán martes (Slavia) y sábado (Celta) en la semana antes del último parón de selecciones del año</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal5.jpg" alt="">
+                <div class="text-block">
+                    <h6>Recuperación antes de la Liga de Campeones</h6>
+                    <p>El campo Tito Vilanova ha sido el escenario de la sesión de este domingo</p>
+                </div>
+            </div>
+            <div class="noticia">
+                <img src="img/gal/gal10.jpg" alt="">
+                <div class="text-block">
+                    <h6>Comunicado médico de Luis Suárez</h6>
+                    <p>Las pruebas realizadas han mostrado que tiene una lesión en el sóleo de la pierna derecha</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- END NEWS CONTAINER -->
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt="">
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <p><b>Nuestro Club</b></p>
+                    <span>Tel. 902 1899 00</span>
+                    <br>
+                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
+                    <br>
+                    <span>oab@fcbarcelona.cat</span>
+                </div>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="http://">
+                    <b style="color: bisque;">
+                            Contactenos
+                        </b>
+                </a>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="https://www.facebook.com/fcbarcelona">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
+                </a>
+                <a href="https://twitter.com/fcbarcelona_es">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="footer-copyright text-center">
+            <p>
+                © Copyright FC Barcelona Página Oficial del FC Barcelona
+            </p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

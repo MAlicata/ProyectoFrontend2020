@@ -1,0 +1,293 @@
+<html>
+
+<head>
+    <title>T E S T</title>
+    <style>
+        #myProgress {
+            width: 100%;
+            background-color: grey;
+        }
+        
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" width="40" height="40" class="d-inline-block align-top" alt=""> F.C BARCELONA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Equipo</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Calendario</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clasificacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Configuracion
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="#">Ajustes</a>
+                        <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                    </div>
+                    <li class="nav-item"> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                          Mi Cuenta
+                        </button>
+                        <div class="modal justify-content-center" id="myModal">
+                            <div class="modal-dialog" style="max-width: fit-content; margin: auto; margin-top: 10%;">
+                                <div class="modal-content">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="img/profileimg.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lucas Matias Zarife</h5>
+                                            <p class="card-text">Fan desde 01/08/1998</p>
+                                            <p class="card-text">Email Registrado: lucmatzar@gmail.com</p>
+                                            <p class="card-text">Puntaje de Fan: 1800 pts.</p>
+                                            <a href="login.html" class="btn btn-primary">Modificar Perfil</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="justify-content: center;">
+        <!-- cuestionario -->
+        <div class="article" style="display: flex;">
+            <div class="row borde1">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                    <hr />
+                    <form style="font:normal 16px sans-serif">
+                        <p>¿Qué futbolista de los siguientes nunca jugó en el Barça?</p>
+                        <!-- roberto soldado  -->
+                        <p onclick="this.style.color='#00FF00'">
+                            <input type="radio" name="pregunta1" id="p11" />Roberto Soldado
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta1" id="p12" />Dani Alves
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta1" id="p13" />Luis Suarez
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta1" id="p14" />Roberto SoldadoArda Turan
+                        </p>
+
+                        <p>¿Quién fue Pepe Guardiola?</p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta2" id="p21" /> Un aficionado famoso
+                        </p>
+                        <p onclick="this.style.color='#00FF00'">
+                            <input type="radio" name="pregunta2" id="p22" /> Un futbolista
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta2" id="p23" /> Un entrenador
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta2" id="p24" /> Un directivo
+                        </p>
+
+                        <p>¿Cuando se fundó el FC Barcelona?</p>
+                        <!-- 1899 -->
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta3" id="p31" />En 1900
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta3" id="p32" />En 1800
+                        </p>
+                        <p onclick="this.style.color='#00FF00'">
+                            <input type="radio" name="pregunta3" id="p33" />En 1899
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta3" id="p34" />En 1890
+                        </p>
+
+                        <p>
+                            ¿Quién fue el patrocinador oficial del FC Bracelona en 2006?
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta4" id="p41" />Qattar
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta4" id="p42" />Ninguno
+                        </p>
+                        <p onclick="this.style.color='#FF0000'">
+                            <input type="radio" name="pregunta4" id="p43" />Unicef
+                        </p>
+                        <p onclick="this.style.color='#00FF00'">
+                            <input type="radio" name="pregunta4" id="p44" />Nike
+                        </p>
+                        <hr />
+                        <p>
+
+                            <input type="button" value=" R E S U L T A D O " onclick="resultado()" />
+                        </p>
+                    </form>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <img src="https://static2.diariouno.com.ar/media/2019/11/messi-gol1-700x395.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Messi, histórico: "llegó a 70 goles en la Selección y se acerca al récord de Pelé"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/lionel-messi-bartomeu-contract_1sy6z2xmmxdxn1idpyt2e0rj31.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Bartomeu: "No tengo dudas de que Messi seguirá vincluado al Barcelona por el resto de su vida"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.infobae.com/new-resizer/-H_dKLQ3LCga69MuE0h3v2YgcYk=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WCVH6SIYIJHVTOLAJQSQZTYA2I.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Barcelona le informó a Luis Suárez que le buscarán un competidor: el delantero argentino que saca ventaja
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+
+        <div class="row">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                <img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt="">
+            </div>
+            <div class="col-sm-3">
+                <div>
+                    <p><b>Nuestro Club</b></p>
+                    <span>Tel. 902 1899 00</span>
+                    <br>
+                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
+                    <br>
+                    <span>oab@fcbarcelona.cat</span>
+                </div>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="http://">
+                    <b style="color: bisque;">
+                        Contactenos
+                    </b>
+                </a>
+            </div>
+            <div class="col-sm-3 justify-content-center">
+                <a href="https://www.facebook.com/fcbarcelona">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
+                </a>
+                <a href="https://www.instagram.com/fcbarcelona/">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
+                </a>
+                <a href="https://twitter.com/fcbarcelona_es">
+                    <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="footer-copyright text-center">
+            <p>
+                © Copyright FC Barcelona Página Oficial del FC Barcelona
+            </p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function resultado() {
+            var p1, p2, p3, p4, nota;
+
+            //  Primera Pregunta
+            if (document.getElementById("p11").checked == true) {
+                p1 = 1;
+            } else {
+                p1 = 0;
+            }
+            // Segunda Pregunta
+            if (document.getElementById("p22").checked == true) {
+                p2 = 1;
+            } else {
+                p2 = 0;
+            }
+            // Tercera Pregunta
+            if (document.getElementById("p33").checked == true) {
+                p3 = 1;
+            } else {
+                p3 = 0;
+            }
+            // Cuarta Pregunta
+            if (document.getElementById("p44").checked == true) {
+                p4 = 1;
+            } else {
+                p4 = 0;
+            }
+
+            nota = p1 + p2 + p3 + p4;
+            alert(" Aciertos: " + nota);
+            location.reload();
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

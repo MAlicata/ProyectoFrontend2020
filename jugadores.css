@@ -1,0 +1,51 @@
+.row{
+    justify-content: center;
+}
+body {
+    background-color: rgb(0, 0, 87);
+    background-image: linear-gradient(to left, rgb(167, 0, 0), rgb(0, 0, 87));
+}
+
+.col {
+    max-width: 228px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoJug {
+    width: 190px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.col:hover .JugStat{
+    display: flex;
+}
+
+.jugadoress {
+    color: antiquewhite;
+}
+
+.nombreJ {
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+
+.JugStat{
+    background-image: linear-gradient( rgba(0,0,0,1) , rgba(0,0,0,0));
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    font-family:impact ;
+    color: gold;
+    position: absolute;
+    display: none;
+    top: 0;
+
+}
